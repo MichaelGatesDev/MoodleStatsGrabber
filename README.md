@@ -5,6 +5,7 @@ Built for GEO Academy, an online course at SUNY Plattsburgh
 
 ## Requirements
 * Python 3
+* Administrative or Instructor controls for the Moodle course
 
 ## How to use
 
@@ -15,14 +16,17 @@ Built for GEO Academy, an online course at SUNY Plattsburgh
 
 3. Place the log file in the same folder as the program (main.py)
 
-4. Open the command line / terminal and run the program: `./main.py <logFile>` where <logFile> is the relative path to the log file. Follow the on-screen instructions.
+4. Open the command line / terminal and run the program: `main.py <logFile> <gradesFile> [-b <blacklistFile.ext>]` where <logFile> is the path to your downloaded log file and <gradesFile> is the path to your downloaded and converted grades file. 
+
+5. The program should run and provide info via the CLI before finishing
+
 
 ## Optional parameters
 
 `-b <blacklistFile>` To blacklist users from results.
-`-w <whitelistFile>` To whitelist users to be included results.
 
-The difference between the blacklist and the whitelist is that the blacklist will include everyone *except* the users in the blacklist, whereas the whitelist will include *only* the users in the whitelist. Blacklist and whitelist can be used at the same time.
+The blacklist will include everyone *except* the users in the blacklist
+
 
 ## Result files
 
